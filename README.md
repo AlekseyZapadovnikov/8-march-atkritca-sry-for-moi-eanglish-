@@ -26,7 +26,7 @@
 
 ## 🚀 Демо
 
-Посмотрите работающий сайт: **[https://username.github.io/8-marta-greeting/](https://username.github.io/8-marta-greeting/)**
+Посмотрите работающий сайт: **[тык]([https://username.github.io/8-marta-greeting/](https://alekseyzapadovnikov.github.io/8-march-atkritca-sry-for-moi-eanglish-/))**
 
 ---
 
