@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Марта - История и Поздравление</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rose: { 50: '#fff1f2', 100: '#ffe4e6', 200: '#fecdd3', 300: '#fda4af', 400: '#fb7185', 500: '#f43f5e', 600: '#e11d48', 700: '#be123c', 800: '#9f1239', 900: '#881337' },
+                        ink: '#1a1a1a',
+                        paper: '#fdfbf7'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #fdfbf7; color: #1a1a1a; overflow-x: hidden; scroll-behavior: smooth; }
+        ::selection { background-color: #fecdd3; color: #1a1a1a; }
+        .animate-on-scroll { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+        .fade-in { opacity: 0; transition: opacity 1s ease-out; }
+        .fade-in.visible { opacity: 1; }
+        
+        @keyframes float1 { 0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.3; } 50% { transform: translate(20px, -20px) scale(1.05); opacity: 0.5; } }
+        @keyframes float2 { 0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.2; } 50% { transform: translate(-30px, 30px) scale(1.1); opacity: 0.4; } }
+        @keyframes pulse-heart { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.2); } }
+        @keyframes pulse-ring { 0% { transform: scale(1); opacity: 0.5; } 100% { transform: scale(1.5); opacity: 0; } }
+        @keyframes bounce-down { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(10px); } }
+        
+        .blob-1 { animation: float1 10s ease-in-out infinite; }
+        .blob-2 { animation: float2 12s ease-in-out infinite; }
+        .heart-icon { animation: pulse-heart 2s ease-in-out infinite; }
+        .heart-ring { animation: pulse-ring 2s ease-in-out infinite; }
+        .arrow-down { animation: bounce-down 2s ease-in-out infinite; }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-paper py-20">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="blob-1 absolute -top-[20%] -right-[10%] w-[70vw] h-[70vw] rounded-full bg-rose-200/40 blur-3xl"></div>
+            <div class="blob-2 absolute -bottom-[20%] -left-[10%] w-[60vw] h-[60vw] rounded-full bg-rose-300/30 blur-3xl" style="animation-delay: 1s;"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-5xl mx-auto flex flex-col items-center animate-on-scroll visible">
+            <p class="text-rose-500 font-medium tracking-widest uppercase text-sm md:text-base mb-6">Международный женский день</p>
+            <h1 class="font-serif text-7xl md:text-9xl lg:text-[12rem] leading-none text-ink mb-8 tracking-tight">8 Марта</h1>
+            <p class="text-lg md:text-2xl text-ink/70 max-w-2xl font-light leading-relaxed">День, который изменил историю. Праздник солидарности, уважения и искренних слов.</p>
+            
+            <div class="mt-12 w-full max-w-4xl px-6 z-10 animate-on-scroll visible" style="transition-delay: 400ms;">
+                <img src="https://picsum.photos/seed/springflowers/2000/800" alt="Весенние цветы" class="w-full h-48 md:h-80 object-cover rounded-3xl shadow-2xl border-4 border-white/50" referrerpolicy="no-referrer" />
+            </div>
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 fade-in visible" style="transition-delay: 1s;">
+            <span class="text-xs uppercase tracking-widest text-ink/50">Листайте вниз</span>
+            <div class="arrow-down">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-rose-400"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="py-24 md:py-32 px-6 bg-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-20 animate-on-scroll">
+                <h2 class="font-serif text-4xl md:text-6xl text-ink mb-6">Как всё начиналось</h2>
+                <p class="text-lg text-ink/70 max-w-2xl mx-auto font-light leading-relaxed">8 Марта — это не просто праздник весны и цветов. Это день солидарности женщин во многих странах в борьбе за равные права и эмансипацию.</p>
+            </div>
+
+            <div class="relative mx-auto max-w-3xl">
+                <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-rose-200 -translate-x-1/2"></div>
+
+                <!-- Event 1 -->
+                <div class="relative flex items-center justify-between mb-16 w-full md:flex-row-reverse flex-row animate-on-scroll">
+                    <div class="absolute left-8 md:left-1/2 w-12 h-12 bg-rose-50 rounded-full border border-rose-200 flex items-center justify-center -translate-x-1/2 z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-rose-500"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <div class="hidden md:block w-5/12"></div>
+                    <div class="w-full md:w-5/12 pl-20 md:pl-0">
+                        <div class="bg-paper p-6 md:p-8 rounded-2xl shadow-sm border border-rose-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 md:text-right">
+                            <span class="inline-block text-rose-600 font-serif text-3xl md:text-4xl mb-3">1857</span>
+                            <h3 class="text-xl md:text-2xl font-medium text-ink mb-4">Марш пустых кастрюль</h3>
+                            <img src="https://picsum.photos/seed/history1/800/400" alt="Марш" class="w-full h-48 object-cover rounded-xl mb-4 shadow-sm" referrerpolicy="no-referrer" />
+                            <p class="text-ink/70 leading-relaxed font-light">Работницы текстильных фабрик в Нью-Йорке вышли на улицы, требуя улучшения условий труда, 10-часового рабочего дня и равной оплаты с мужчинами.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="relative flex items-center justify-between mb-16 w-full md:flex-row flex-row animate-on-scroll">
+                    <div class="absolute left-8 md:left-1/2 w-12 h-12 bg-rose-50 rounded-full border border-rose-200 flex items-center justify-center -translate-x-1/2 z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-rose-500"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg>
+                    </div>
+                    <div class="hidden md:block w-5/12"></div>
+                    <div class="w-full md:w-5/12 pl-20 md:pl-0">
+                        <div class="bg-paper p-6 md:p-8 rounded-2xl shadow-sm border border-rose-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 md:text-left">
+                            <span class="inline-block text-rose-600 font-serif text-3xl md:text-4xl mb-3">1908</span>
+                            <h3 class="text-xl md:text-2xl font-medium text-ink mb-4">Новый протест в Нью-Йорке</h3>
+                            <img src="https://picsum.photos/seed/history2/800/400" alt="Протест" class="w-full h-48 object-cover rounded-xl mb-4 shadow-sm" referrerpolicy="no-referrer" />
+                            <p class="text-ink/70 leading-relaxed font-light">Более 15 000 женщин прошли маршем через весь город, требуя сокращения рабочего дня, лучших условий оплаты и предоставления права голоса.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="relative flex items-center justify-between mb-16 w-full md:flex-row-reverse flex-row animate-on-scroll">
+                    <div class="absolute left-8 md:left-1/2 w-12 h-12 bg-rose-50 rounded-full border border-rose-200 flex items-center justify-center -translate-x-1/2 z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-rose-500"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                    </div>
+                    <div class="hidden md:block w-5/12"></div>
+                    <div class="w-full md:w-5/12 pl-20 md:pl-0">
+                        <div class="bg-paper p-6 md:p-8 rounded-2xl shadow-sm border border-rose-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 md:text-right">
+                            <span class="inline-block text-rose-600 font-serif text-3xl md:text-4xl mb-3">1910</span>
+                            <h3 class="text-xl md:text-2xl font-medium text-ink mb-4">Инициатива Клары Цеткин</h3>
+                            <img src="https://picsum.photos/seed/history3/800/400" alt="Клара Цеткин" class="w-full h-48 object-cover rounded-xl mb-4 shadow-sm" referrerpolicy="no-referrer" />
+                            <p class="text-ink/70 leading-relaxed font-light">На Международной конференции женщин-социалисток Клара Цеткин предложила учредить Международный женский день для привлечения внимания к борьбе женщин за свои права.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="relative flex items-center justify-between mb-16 w-full md:flex-row flex-row animate-on-scroll">
+                    <div class="absolute left-8 md:left-1/2 w-12 h-12 bg-rose-50 rounded-full border border-rose-200 flex items-center justify-center -translate-x-1/2 z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-rose-500"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    </div>
+                    <div class="hidden md:block w-5/12"></div>
+                    <div class="w-full md:w-5/12 pl-20 md:pl-0">
+                        <div class="bg-paper p-6 md:p-8 rounded-2xl shadow-sm border border-rose-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 md:text-left">
+                            <span class="inline-block text-rose-600 font-serif text-3xl md:text-4xl mb-3">1917</span>
+                            <h3 class="text-xl md:text-2xl font-medium text-ink mb-4">Начало перемен в России</h3>
+                            <img src="https://picsum.photos/seed/history4/800/400" alt="1917" class="w-full h-48 object-cover rounded-xl mb-4 shadow-sm" referrerpolicy="no-referrer" />
+                            <p class="text-ink/70 leading-relaxed font-light">Забастовка текстильщиц в Петрограде стала одним из катализаторов Февральской революции, после которой женщины получили право голоса.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Section -->
+    <section class="py-24 md:py-32 px-6 bg-rose-50 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] rounded-full bg-white/60 blur-3xl"></div>
+        </div>
+
+        <div class="max-w-3xl mx-auto relative z-10 animate-on-scroll">
+            <div class="bg-white/80 backdrop-blur-sm p-8 md:p-16 rounded-[2rem] shadow-xl shadow-rose-100/50 border border-rose-100 text-center">
+                
+                <div class="w-16 h-16 bg-rose-100 text-rose-500 rounded-full flex items-center justify-center mx-auto mb-8 relative">
+                    <div class="heart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-rose-500"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                    </div>
+                    <div class="heart-ring absolute inset-0 bg-rose-200 rounded-full -z-10"></div>
+                </div>
+
+                <h2 class="font-serif text-3xl md:text-5xl text-ink mb-10">Искренние слова</h2>
+
+                <img src="https://picsum.photos/seed/roses/1000/600" alt="Розы" class="w-full h-48 md:h-64 object-cover rounded-2xl mb-8 shadow-sm" referrerpolicy="no-referrer" />
+
+                <div class="space-y-6 text-lg md:text-xl text-ink/80 font-light leading-relaxed text-left md:text-center">
+                    <p>Я замечаю, что для девушек моего возраста, причем для очень многих, очень актуальны эти идеи, а значит все не так гладко, как мне кажется.</p>
+                    <p>Мне бы искренне хотелось пожелать, чтобы вас всех это волновало меньше, чтобы никто из мужского пола вас не обижал и не принижал. Хотелось бы, чтобы вы чувствовали себя достойно и в безопасности.</p>
+                    <p>Я, если честно, очень рад что в мире есть женщины, потому что, если бы в мире были бы только мужики, я бы сошёл с ума головой от их тупости, огромного эго и тупых принципов <span class="text-ink/50 text-base">(пс отношу себя ко всем этим мужикам :) )</span></p>
+                    <p class="font-medium text-rose-600 text-2xl md:text-3xl font-serif pt-6">Спасибо что вы есть. С 8 марта!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-ink text-paper/70 text-center">
+        <p class="text-sm font-light tracking-wide">Сделано с уважением. 8 Марта 2024</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+        
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
