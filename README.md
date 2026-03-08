@@ -26,7 +26,8 @@
 
 ## 🚀 Демо
 
-Посмотрите работающий сайт: **[тык]([https://username.github.io/8-marta-greeting/](https://alekseyzapadovnikov.github.io/8-march-atkritca-sry-for-moi-eanglish-/))**
+Посмотрите работающий сайт: **[https://alekseyzapadovnikov.github.io/8-march-atkritca-sry-for-moi-eanglish-/](https://alekseyzapadovnikov.github.io/8-march-atkritca-sry-for-moi-eanglish-/)**
+
 
 ---
 
