@@ -7,28 +7,28 @@ const historyEvents = [
     title: "Марш пустых кастрюль",
     description: "Работницы текстильных фабрик в Нью-Йорке вышли на улицы, требуя улучшения условий труда, 10-часового рабочего дня и равной оплаты с мужчинами.",
     icon: <Users className="w-6 h-6 text-rose-500" />,
-    image: "/images/history1.jpg"
+    image: "images/history1.jpg"
   },
   {
     year: "1908",
     title: "Новый протест в Нью-Йорке",
     description: "Более 15 000 женщин прошли маршем через весь город, требуя сокращения рабочего дня, лучших условий оплаты и предоставления права голоса.",
     icon: <Flag className="w-6 h-6 text-rose-500" />,
-    image: "/images/history2.jpg"
+    image: "images/history2.jpg"
   },
   {
     year: "1910",
     title: "Инициатива Клары Цеткин",
     description: "На Международной конференции женщин-социалисток в Копенгагене Клара Цеткин предложила учредить Международный женский день для привлечения внимания к борьбе женщин за свои права.",
     icon: <Globe className="w-6 h-6 text-rose-500" />,
-    image: "/images/history3.jpg"
+    image: "images/history3.jpg"
   },
   {
     year: "1917",
     title: "Начало перемен в России",
     description: "Забастовка текстильщиц в Петрограде (23 февраля по старому стилю, 8 марта по новому) стала одним из катализаторов Февральской революции, после которой женщины получили право голоса.",
     icon: <CalendarDays className="w-6 h-6 text-rose-500" />,
-    image: "/images/history4.jpg"
+    image: "images/history4.jpg"
   }
 ];
 

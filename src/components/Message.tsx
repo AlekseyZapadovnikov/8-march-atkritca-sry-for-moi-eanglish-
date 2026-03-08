@@ -40,7 +40,7 @@ export default function Message() {
           <h2 className="font-serif text-3xl md:text-5xl text-ink mb-10">Искренние слова</h2>
 
           <img
-            src="/images/message.jpg"
+            src="images/message.jpg"
             alt="Розы"
             className="w-full h-48 md:h-64 object-cover rounded-2xl mb-8 shadow-sm"
           />

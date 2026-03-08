@@ -65,7 +65,7 @@ export default function Hero() {
           className="mt-12 w-full max-w-4xl px-6 z-10"
         >
           <img
-            src="/images/hero.jpg"
+            src="images/hero.jpg"
             alt="Весенние цветы"
             className="w-full h-48 md:h-80 object-cover rounded-3xl shadow-2xl border-4 border-white/50"
           />
